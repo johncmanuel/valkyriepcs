@@ -11,6 +11,7 @@
     "@tailwindcss/ui": "^0.6.2",
     "@tailwindui/react": "^0.1.1",
     "next": "9.5.3",
+    "normalize.css": "^8.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
