@@ -2,6 +2,7 @@ import Head from "next/head"
 
 // Import CSS
 import 'styles/tailwind.css'
+import 'normalize.css'
 
 
 function MyApp({ Component, pageProps }) {
