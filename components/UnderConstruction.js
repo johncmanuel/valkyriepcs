@@ -7,9 +7,8 @@ export default function UnderConstruction() {
         <article>
             <h1>This page is under construction!</h1>
             <div>
-                <p>Sorry for the inconvenience, but we’re performing some maintenance at the moment. If you need to you can always 
-                <a href="mailto:#" target="_blank" rel="noopener noreferrer">contact us</a>, 
-                otherwise we’ll be back online shortly!</p>
+                <p>Sorry for the inconvenience, but we’re still designing this page at the moment. If you need to, you can always <a href="mailto:#" target="_blank" rel="noopener noreferrer">contact us</a>, 
+                otherwise this will be finished as soon as possible!</p>
                 <p>— The Team @ Valkyrie PCs</p>
             </div>
             <br />
