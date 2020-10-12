@@ -82,7 +82,7 @@ export default function Footer() {
                         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">Contact</h2>
                         <nav className="list-none mb-10">
                             <li className="my-6 md:my-3">
-                                <a className="text-gray-600 hover:text-gray-800" target="_blank" rel="noopener noreferrer" href="#" >valkyriepcs@gmail.com</a>
+                                <a className="text-gray-600 hover:text-gray-800" target="_blank" rel="noopener noreferrer" href="#">valkyriepcs@gmail.com</a>
                             </li>
                         </nav>
                     </div>
