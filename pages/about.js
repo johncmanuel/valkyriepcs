@@ -1,26 +1,27 @@
-import Footer from 'components/footer'
-import Nav from 'components/nav'
-import Header from 'components/header'
+import Footer from 'components/Footer'
+import Nav from 'components/Nav'
+import Header from 'components/Header'
 
 
 export default function About() {
     return <>
-        <Header></Header>
-        <Nav></Nav>
+        <Header />
+        <Nav />
         
-        <section className="text-gray-700 body-font">
-            <div className="container px-5 py-24 mx-auto">
+        {/* Team Section */}
+        <section className="text-gray-700 py-44 bg-transparent">
+            <div className="container lg:px-5 px-24 py-24 mx-auto">
                 <div className="flex flex-col text-center w-full mb-20">
                     <h1 className="text-2xl font-medium title-font mb-4 text-gray-900">OUR TEAM</h1>
-                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base">team desc</p>
+                    {/* <p className="lg:w-2/3 mx-auto leading-relaxed text-base">team desc</p> */}
                 </div>
-                <div className="flex flex-wrap m-4">
+                <div className="flex flex-wrap -m-4">
                     <div className="p-4 lg:w-1/3 md:w-1/2">
                         <div className="h-full flex flex-col items-center text-center">
                             <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200" />
                             <div className="w-full">
                                 <h2 className="title-font font-medium text-lg text-gray-900">John Carlo Manuel</h2>
-                                <h3 className="text-gray-500 mb-3">Developer & Co-Founder</h3>
+                                <h3 className="text-gray-500 mb-3">Co-Founder, Developer, & Entrepreneur</h3>
                                 <p className="mb-4">desc.</p>
                                 <span className="inline-flex">
                                     <a className="text-gray-500">
@@ -47,7 +48,7 @@ export default function About() {
                             <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/201x201" />
                             <div className="w-full">
                                 <h2 className="title-font font-medium text-lg text-gray-900">Shania Hao</h2>
-                                <h3 className="text-gray-500 mb-3">PR</h3>
+                                <h3 className="text-gray-500 mb-3">Intern</h3>
                                 <p className="mb-4">desc</p>
                                 <span className="inline-flex">
                                     <a className="text-gray-500">
@@ -74,7 +75,7 @@ export default function About() {
                             <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/202x202" />
                             <div className="w-full">
                                 <h2 className="title-font font-medium text-lg text-gray-900">Emmanuel Flores</h2>
-                                <h3 className="text-gray-500 mb-3">Co-Founder</h3>
+                                <h3 className="text-gray-500 mb-3">Co-Founder, Developer, & Entrepreneur</h3>
                                 <p className="mb-4">desc.</p>
                                 <span className="inline-flex">
                                     <a className="text-gray-500">
@@ -100,45 +101,6 @@ export default function About() {
             </div>
         </section>
 
-        <Footer></Footer>
-
-    {/* Alternative Team Section */}
-    {/* <section className="text-gray-700 body-font">
-        <div className="container px-5 py-24 mx-auto">
-            <div className="flex flex-col text-center w-full mb-20">
-                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Team</h1>
-                <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
-            </div>
-            <div className="flex flex-wrap -m-2">
-                <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-                    <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                        <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80" />
-                        <div className="flex-grow">
-                            <h2 className="text-gray-900 title-font font-medium">John Carlo Manuel</h2>
-                            <p className="text-gray-500">Developer & Co-Founder</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-                    <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                        <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/84x84" />
-                        <div className="flex-grow">
-                            <h2 className="text-gray-900 title-font font-medium">Emmanuel Flores</h2>
-                            <p className="text-gray-500">Co-founder</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-                    <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                        <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/88x88" />
-                        <div className="flex-grow">
-                            <h2 className="text-gray-900 title-font font-medium">Shania Hao</h2>
-                            <p className="text-gray-500">idk</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> */}
+        <Footer />
     </>
 }
