@@ -63,7 +63,7 @@ export default function Footer() {
                         <nav className="list-none mb-10">
                             <li className="my-6 md:my-3">
                                 <Link href="/computers">
-                                    <a className="text-gray-600 hover:text-gray-800">Computers</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Desktop Computers</a>
                                 </Link>
                             </li>
                         </nav>
@@ -95,12 +95,12 @@ export default function Footer() {
                         {`© Copyright ${new Date().getFullYear()} Valkyrie PCs. All Rights Reserved.`}
                     </p>
                     <div className="text-gray-500 text-sm text-center sm:float-right lg:my-0 my-4">
-                        <Link href="/legal/privacy">
-                            {`Privacy Policy`}
+                        <Link href="/legal/terms">
+                            {`Terms of Service`}
                         </Link>
                             &nbsp; | &nbsp;
-                            <Link href="/legal/terms">
-                            {`Terms of Service`}
+                        <Link href="/legal/terms">
+                            {`Privacy Policy`}
                         </Link>
                     </div>
                     <div style={{ clear: 'both' }} />
