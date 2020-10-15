@@ -1,119 +1,147 @@
-import { Transition } from '@tailwindui/react'
-import { useState } from 'react'
-import Link from 'next/link'
-
+import { Transition } from "@tailwindui/react";
+import { useState } from "react";
+import Link from "next/link";
 
 function Dropdown() {
-    const [isOn, setIsOn] = useState(false);
-    const [inMenu, setInMenu] = useState(false);
-    return <>
-        <button
-            type="button"
-            aria-checked={isOn}
-            onMouseEnter={() => {
-                setIsOn(!isOn);
-                console.log('isOn: ' + !isOn);
-                if (isOn === true) {
-                    console.log('isOn is true, thus inMenu is true!');
-                    setInMenu(!inMenu);
-                }
-            }}
-            onMouseLeave={() => {
-                if (inMenu !== true) {
-                    console.log('inMenu is false, so I must make isOn false.');
-                    setIsOn(false);
-                }
-            }}
-            className={`${isOn ? 'text-gray-900' : 'text-gray-500'} inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150`}
-        >
-            <span>Company</span>
-        </button>
+  const [isOn, setIsOn] = useState(false);
+  const [inMenu, setInMenu] = useState(false);
+  return (
+    <>
+      <button
+        type="button"
+        aria-checked={isOn}
+        onMouseEnter={() => {
+          setIsOn(!isOn);
+          console.log("isOn: " + !isOn);
+          if (isOn === true) {
+            console.log("isOn is true, thus inMenu is true!");
+            setInMenu(!inMenu);
+          }
+        }}
+        onMouseLeave={() => {
+          if (inMenu !== true) {
+            console.log("inMenu is false, so I must make isOn false.");
+            setIsOn(false);
+          }
+        }}
+        className={`${
+          isOn ? "text-gray-900" : "text-gray-500"
+        } inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150`}
+      >
+        <span>Company</span>
+      </button>
 
-        <Transition
-            // Transition component triggered by button
-            show={isOn}
-
-            enter="transition ease-out duration-200"
-            enterFrom="opacity-0 translate-y-1"
-            enterTo="opacity-100 translate-y-0"
-            leave="transition ease-in duration-150"
-            leaveFrom="opacity-100 translate-y-0"
-            leaveTo="opacity-0 translate-y-1"
-            onMouseEnter={() => {
-                setInMenu(!inMenu);
-                console.log('inMenu: ' + inMenu);
-            }}
-            onMouseLeave={() => {
-                setIsOn(false);
-                console.log('inMenu: ' + inMenu);
-            }}
-        >
-            {/* Show desktop menu */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 pt-3 px-2 w-screen max-w-md sm:px-0">
-                <div className="rounded-lg shadow-2xl">
-                    <div className="rounded-lg shadow-xs overflow-hidden">
-                        <div className="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                            <a href="#" className="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
-                                <div className="space-y-1">
-                                    {/* Create a JSON that tracks all of the 'Company' listings */}
-                                    <p className="text-base leading-6 font-medium text-gray-900">
-                                        About
-                                    </p>
-                                    {/* <p className="text-sm leading-5 text-gray-500">
+      <Transition
+        // Transition component triggered by button
+        show={isOn}
+        enter="transition ease-out duration-200"
+        enterFrom="opacity-0 translate-y-1"
+        enterTo="opacity-100 translate-y-0"
+        leave="transition ease-in duration-150"
+        leaveFrom="opacity-100 translate-y-0"
+        leaveTo="opacity-0 translate-y-1"
+        onMouseEnter={() => {
+          setInMenu(!inMenu);
+          console.log("inMenu: " + inMenu);
+        }}
+        onMouseLeave={() => {
+          setIsOn(false);
+          console.log("inMenu: " + inMenu);
+        }}
+      >
+        {/* Show desktop menu */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 pt-3 px-2 w-screen max-w-md sm:px-0">
+          <div className="rounded-lg shadow-2xl">
+            <div className="rounded-lg shadow-xs overflow-hidden">
+              <div className="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                <a
+                  href="#"
+                  className="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
+                >
+                  <div className="space-y-1">
+                    {/* Create a JSON that tracks all of the 'Company' listings */}
+                    <p className="text-base leading-6 font-medium text-gray-900">
+                      About
+                    </p>
+                    {/* <p className="text-sm leading-5 text-gray-500">
                                         
                                     </p> */}
-                                </div>
-                            </a>
-                            <a href="#" className="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
-                                <div className="space-y-1">
-                                    <p className="text-base leading-6 font-medium text-gray-900">
-                                        Events
-                                    </p>
-                                    {/* <p className="text-sm leading-5 text-gray-500">
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
+                >
+                  <div className="space-y-1">
+                    <p className="text-base leading-6 font-medium text-gray-900">
+                      Events
+                    </p>
+                    {/* <p className="text-sm leading-5 text-gray-500">
                                     </p> */}
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                  </div>
+                </a>
+              </div>
             </div>
-        </Transition>
+          </div>
+        </div>
+      </Transition>
     </>
+  );
 }
 
 export default function Nav() {
-    return <>
-        <div className="relative bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
-                    <div className="lg:w-0 lg:flex-1">
-                        <Link href="/">
-                            <a className="flex text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
-                                Valkyrie PCs
-                            </a>
-                        </Link>
-                    </div>
-                    <div className="-mr-2 -my-2 md:hidden">
-                        <button type="button" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
-                            {/* Heroicon name: menu */}
-                            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                        </button>
-                    </div>
-                    <nav className="hidden md:flex space-x-10">
-                        <a href="#" className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
-                            Pricing
-                        </a>
-                        <a href="#" className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
-                            Contact
-                        </a>
-                        <div className="relative">
-                            {/* Toggle dropdown menu when clicking on 'Company' */}
-                            <Dropdown />
-                        </div>
-                    </nav>
-                    {/* <div className="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
+  return (
+    <>
+      <div className="relative bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+            <div className="lg:w-0 lg:flex-1">
+              <Link href="/">
+                <a className="flex text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+                  Valkyrie PCs
+                </a>
+              </Link>
+            </div>
+            <div className="-mr-2 -my-2 md:hidden">
+              <button
+                type="button"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+              >
+                {/* Heroicon name: menu */}
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+            <nav className="hidden md:flex space-x-10">
+              <a
+                href="#"
+                className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              >
+                Pricing
+              </a>
+              <a
+                href="#"
+                className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              >
+                Contact
+              </a>
+              <div className="relative">
+                {/* Toggle dropdown menu when clicking on 'Company' */}
+                <Dropdown />
+              </div>
+            </nav>
+            {/* <div className="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
                         <a href="#" className="whitespace-no-wrap text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900">
                             Sign in
                         </a>
@@ -123,10 +151,10 @@ export default function Nav() {
                              </a>
                         </span>
                     </div> */}
-                </div>
-            </div>
+          </div>
+        </div>
 
-            {/*
+        {/*
                 Mobile menu, show/hide based on mobile menu state.
 
                 Entering: "duration-200 ease-out"
@@ -136,7 +164,7 @@ export default function Nav() {
                 From: "opacity-100 scale-100"
                 To: "opacity-0 scale-95"
             */}
-            {/* <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        {/* <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
                 <div className="rounded-lg shadow-lg">
                     <div className="rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50">
                         <div className="pt-5 pb-6 px-5 space-y-6">
@@ -241,8 +269,7 @@ export default function Nav() {
                     </div>
                 </div>
             </div> */}
-        </div>
-
+      </div>
     </>
-
+  );
 }
