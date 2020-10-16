@@ -38,7 +38,7 @@ export default function Home() {
       </section>
 
       {/* Features section */}
-      <section className="py-40 px-5 bg-gray-100">
+      <section className="py-20 px-5 bg-gray-100">
         <div className="container mx-auto">
           <div className="text-center mb-20">
             <h1 className="lg:text-5xl text-4xl font-medium text-center title-font text-gray-900 mb-4">
@@ -164,68 +164,89 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Steps section */}
-      <section class="text-gray-700 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
-            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-              {/* Gray bar that goes down the step process*/}
-              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+      <section className="py-20 px-5">
+        {/* Create a shape behind the images */}
+        <div className="container mx-auto">
+          <div className="flex flex-wrap -mx-4 overflow-hidden">
+            <div className="my-4 px-4 w-1/2 overflow-hidden">
+              <img src="/imgs/pc1_int.jpg" alt="interior of pc1" />
             </div>
-            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+            <div className="my-4 px-4 w-1/2 overflow-hidden">
+              <img src="/imgs/pc2_int.jpg" alt="interior of pc2" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Steps section */}
+      <section className="py-20 px-5">
+        <div className="container mx-auto flex flex-wrap">
+          <div className="flex flex-col w-full text-center mb-20">
+            <h1 className="lg:text-5xl text-4xl font-medium text-center title-font text-gray-900 mb-4">
+              How We Work
+            </h1>
+            <p className="text-xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+              We take pride in our craft, and we also take pride in our process.
+            </p>
+          </div>
+          <div className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+            </div>
+            <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
               1
             </div>
-            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-              <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+            <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div className="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-12 h-12"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  className="w-12 h-12"
                   viewBox="0 0 24 24"
                 >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                 </svg>
               </div>
-              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">
+              <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
                   Beginning
                 </h2>
-                <p class="leading-relaxed">
+                <p className="leading-relaxed">
                   After sending us your parts list, we will order the exact,
                   necessary components for your computer.
                 </p>
               </div>
             </div>
           </div>
-          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          <div className="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
             </div>
-            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+            <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
               2
             </div>
-            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-              <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+            <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div className="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-12 h-12"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  className="w-12 h-12"
                   viewBox="0 0 24 24"
                 >
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                 </svg>
               </div>
-              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">
+              <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
                   Assembly
                 </h2>
-                <p class="leading-relaxed">
+                <p className="leading-relaxed">
                   Once the parts have been shipped to us, we will assemble your
                   computer, ensuring that each piece of hardware is properly
                   embedded.
@@ -233,33 +254,33 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          <div className="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
             </div>
-            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+            <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
               3
             </div>
-            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-              <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+            <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div className="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-12 h-12"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  className="w-12 h-12"
                   viewBox="0 0 24 24"
                 >
-                  <circle cx="12" cy="5" r="3"></circle>
-                  <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                  <circle cx={12} cy={5} r={3} />
+                  <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3" />
                 </svg>
               </div>
-              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">
+              <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
                   Testing & Final Touches
                 </h2>
-                <p class="leading-relaxed">
+                <p className="leading-relaxed">
                   Next, we will begin stress-testing your computer (via UNIGINE
                   Benchmarks) in order to ensure performance stability at
                   maximum usage.
@@ -267,33 +288,33 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
-            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          <div className="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+            <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
             </div>
-            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+            <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
               4
             </div>
-            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-              <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+            <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div className="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-12 h-12"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  className="w-12 h-12"
                   viewBox="0 0 24 24"
                 >
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                  <circle cx={12} cy={7} r={4} />
                 </svg>
               </div>
-              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">
+              <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
                   Delivery
                 </h2>
-                <p class="leading-relaxed">
+                <p className="leading-relaxed">
                   Finally, we'll contact you for pick-ups. Once the PC delivers
                   safely in your hands, it is yours to keep, forever! Enjoy!
                 </p>
