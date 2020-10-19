@@ -164,19 +164,26 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 px-5">
-        {/* Create a shape behind the images */}
+      {/* <section className="py-20 px-5">
         <div className="container mx-auto">
           <div className="flex flex-wrap -mx-4 overflow-hidden">
-            <div className="my-4 px-4 w-1/2 overflow-hidden">
-              <img src="/imgs/pc1_int.jpg" alt="interior of pc1" />
+            <div className="my-4 px-4 lg:w-1/2 w-full overflow-hidden">
+              <img
+                src="/imgs/pc1_int.jpg"
+                className="shadow-xl"
+                alt="interior of pc1"
+              />
             </div>
-            <div className="my-4 px-4 w-1/2 overflow-hidden">
-              <img src="/imgs/pc2_int.jpg" alt="interior of pc2" />
+            <div className="my-4 px-4 lg:w-1/2 w-full overflow-hidden">
+              <img
+                src="/imgs/pc2_int.jpg"
+                className="shadow-xl"
+                alt="interior of pc2"
+              />
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Steps section */}
       <section className="py-20 px-5">
@@ -186,7 +193,7 @@ export default function Home() {
               How We Work
             </h1>
             <p className="text-xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-              We take pride in our craft, and we also take pride in our process.
+              We take pride in our craft, but we also take pride in our process.
             </p>
           </div>
           <div className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
@@ -215,7 +222,7 @@ export default function Home() {
                   Beginning
                 </h2>
                 <p className="leading-relaxed">
-                  After sending us your parts list, we will order the exact,
+                  After sending us your parts list, we order the exact,
                   necessary components for your computer.
                 </p>
               </div>
@@ -247,7 +254,7 @@ export default function Home() {
                   Assembly
                 </h2>
                 <p className="leading-relaxed">
-                  Once the parts have been shipped to us, we will assemble your
+                  Once the parts have been shipped to us, we assemble your
                   computer, ensuring that each piece of hardware is properly
                   embedded.
                 </p>
@@ -281,9 +288,8 @@ export default function Home() {
                   Testing & Final Touches
                 </h2>
                 <p className="leading-relaxed">
-                  Next, we will begin stress-testing your computer (via UNIGINE
-                  Benchmarks) in order to ensure performance stability at
-                  maximum usage.
+                  Next, we begin stress-testing your computer (via UNIGINE
+                  Benchmarks) for performance stability at maximum usage.
                 </p>
               </div>
             </div>
@@ -315,8 +321,8 @@ export default function Home() {
                   Delivery
                 </h2>
                 <p className="leading-relaxed">
-                  Finally, we'll contact you for pick-ups. Once the PC delivers
-                  safely in your hands, it is yours to keep, forever! Enjoy!
+                  Finally, we contact you for pick-ups. Once the PC delivers
+                  safely in your hands, it is yours to keep, forever!
                 </p>
               </div>
             </div>
@@ -432,12 +438,12 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 px-5">
         <div className="max-w-screen-xl mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-          <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+          <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 lg:text-left text-center">
             Ready for a new PC?
             <br />
             <span className="text-indigo-600">Let's build it.</span>
           </h2>
-          <div className="mt-8 flex lg:flex-shrink-0 lg:mt-0">
+          <div className="mt-8 flex lg:flex-shrink-0 lg:mt-0 justify-center">
             <div className="inline-flex">
               <a
                 href="#"
@@ -446,11 +452,15 @@ export default function Home() {
                 Get Started
               </a>
             </div>
-            {/* <div className="ml-3 inline-flex rounded-md shadow">
-            <a href="#" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-              Learn more
-            </a>
-          </div> */}
+            <div className="inline-flex">
+              <a
+                href="#"
+                className="ml-4 sinline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-gray-700 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                // className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-indigo-600 bg-grey hover:text-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+              >
+                About Us
+              </a>
+            </div>
           </div>
         </div>
       </section>
