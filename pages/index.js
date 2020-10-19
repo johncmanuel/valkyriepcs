@@ -1,6 +1,7 @@
 import Footer from "components/Footer";
 import Nav from "components/Nav";
 import Header from "components/Header";
+import ComputerMemory from "components/ComputerMemory";
 
 export default function Home() {
   return (
@@ -164,27 +165,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section className="py-20 px-5">
-        <div className="container mx-auto">
-          <div className="flex flex-wrap -mx-4 overflow-hidden">
-            <div className="my-4 px-4 lg:w-1/2 w-full overflow-hidden">
-              <img
-                src="/imgs/pc1_int.jpg"
-                className="shadow-xl"
-                alt="interior of pc1"
-              />
-            </div>
-            <div className="my-4 px-4 lg:w-1/2 w-full overflow-hidden">
-              <img
-                src="/imgs/pc2_int.jpg"
-                className="shadow-xl"
-                alt="interior of pc2"
-              />
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* Steps section */}
       <section className="py-20 px-5">
         <div className="container mx-auto flex flex-wrap">
@@ -205,17 +185,7 @@ export default function Home() {
             </div>
             <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
               <div className="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  className="w-12 h-12"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg>
+                <ComputerMemory />
               </div>
               <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                 <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
