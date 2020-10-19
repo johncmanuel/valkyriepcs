@@ -456,7 +456,6 @@ export default function Home() {
               <a
                 href="#"
                 className="ml-4 sinline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-gray-700 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                // className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-indigo-600 bg-grey hover:text-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
               >
                 About Us
               </a>
