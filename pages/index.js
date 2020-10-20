@@ -234,12 +234,6 @@ export default function Home() {
             <div className="my-4 px-4 w-full overflow-hidden xl:w-1/2">
               <img src="/imgs/pc3.jpg" className="" alt="Third Computer" />
             </div>
-            {/* <div className="my-4 px-4 w-full overflow-hidden xl:w-1/2">
-            </div>
-            <div className="my-4 px-4 w-full overflow-hidden xl:w-1/2">
-            </div>
-            <div className="my-4 px-4 w-full overflow-hidden xl:w-1/2">
-            </div> */}
           </div>
         </div>
       </section>
