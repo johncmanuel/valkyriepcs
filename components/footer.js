@@ -11,7 +11,7 @@ export default function Footer() {
                             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                         </svg> */}
             <p>img</p>
-            <span className="ml-3 text-xl">V{COMPANY.name}</span>
+            <span className="ml-3 text-xl">{COMPANY.name}</span>
           </a>
           <p className="mt-2 text-sm text-gray-500">{COMPANY.motto}</p>
         </div>
