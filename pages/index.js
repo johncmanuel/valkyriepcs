@@ -8,10 +8,13 @@ import Desktop from "components/Desktop";
 import ShippingFast from "components/ShippingFast";
 import Checkmark from "components/Checkmark";
 import { COMPANY } from "data/company.json";
+import HeadTitle from "components/HeadTitle";
 
 export default function Home() {
   return (
     <>
+      <HeadTitle>{COMPANY.name}</HeadTitle>
+
       <Header />
       <Nav />
 

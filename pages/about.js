@@ -1,10 +1,13 @@
 import Footer from "components/Footer";
 import Nav from "components/Nav";
 import Header from "components/Header";
+import HeadTitle from "components/HeadTitle";
 
 export default function About() {
   return (
     <>
+      <HeadTitle>About Us</HeadTitle>
+
       <Header />
       <Nav />
 
