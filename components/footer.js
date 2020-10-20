@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { COMPANY } from "data/company.json";
 
 export default function Footer() {
   return (
@@ -10,9 +11,9 @@ export default function Footer() {
                             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                         </svg> */}
             <p>img</p>
-            <span className="ml-3 text-xl">Valkyrie PCs</span>
+            <span className="ml-3 text-xl">V{COMPANY.name}</span>
           </a>
-          <p className="mt-2 text-sm text-gray-500">High-quality PCs.</p>
+          <p className="mt-2 text-sm text-gray-500">{COMPANY.motto}</p>
         </div>
         {/* Company */}
         <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
@@ -118,7 +119,9 @@ export default function Footer() {
       <div className="border-gray-100 border-t">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row lg:justify-evenly">
           <p className="text-gray-500 text-sm text-center sm:float-left">
-            {`© Copyright ${new Date().getFullYear()} Valkyrie PCs. All Rights Reserved.`}
+            {`© Copyright ${new Date().getFullYear()} ${
+              COMPANY.name
+            }. All Rights Reserved.`}
           </p>
           <div className="text-gray-500 text-sm text-center sm:float-right lg:my-0 my-4">
             <Link href="/legal/terms">{`Terms of Service`}</Link>
