@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Footer from "components/Footer";
 import Nav from "components/Nav";
 import Header from "components/Header";
@@ -6,6 +7,7 @@ import Tools from "components/Tools";
 import Desktop from "components/Desktop";
 import ShippingFast from "components/ShippingFast";
 import Checkmark from "components/Checkmark";
+import { COMPANY } from "data/company.json";
 
 export default function Home() {
   return (
@@ -19,22 +21,26 @@ export default function Home() {
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <header>
               <h1 className="lg:text-5xl text-4xl mb-4 font-medium text-gray-900">
-                Valkyrie PCs
+                {COMPANY.name}
               </h1>
               <br className="inline-block" />
               <h3 className="sm:text-2xl text-xl mb-4 font-medium text-gray-900">
-                Building computers for anyone at any price.
+                {COMPANY.motto}
               </h3>
             </header>
             <br className="inline-block" />
           </div>
           <div className="flex justify-center">
-            <button className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-              Get Started
-            </button>
-            <button className="ml-4 sinline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-gray-700 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-              About Us
-            </button>
+            <Link href="/pricing">
+              <button className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                Get Started
+              </button>
+            </Link>
+            <Link href="/about">
+              <button className="ml-4 sinline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-gray-700 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                About Us
+              </button>
+            </Link>
           </div>
           {/* <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" />
@@ -228,15 +234,12 @@ export default function Home() {
             <div className="my-4 px-4 w-full overflow-hidden xl:w-1/2">
               <img src="/imgs/pc3.jpg" className="" alt="Third Computer" />
             </div>
-            <div className="my-4 px-4 w-full overflow-hidden xl:w-1/2">
-              {/* Column Content */}
+            {/* <div className="my-4 px-4 w-full overflow-hidden xl:w-1/2">
             </div>
             <div className="my-4 px-4 w-full overflow-hidden xl:w-1/2">
-              {/* Column Content */}
             </div>
             <div className="my-4 px-4 w-full overflow-hidden xl:w-1/2">
-              {/* Column Content */}
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -321,20 +324,18 @@ export default function Home() {
           </h2>
           <div className="mt-8 flex lg:flex-shrink-0 lg:mt-0 justify-center">
             <div className="inline-flex">
-              <a
-                href="#"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-              >
-                Get Started
-              </a>
+              <Link href="/pricing">
+                <button className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                  Get Started
+                </button>
+              </Link>
             </div>
             <div className="inline-flex">
-              <a
-                href="#"
-                className="ml-4 sinline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-gray-700 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-              >
-                About Us
-              </a>
+              <Link href="/about">
+                <button className="ml-4 sinline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-gray-700 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                  About Us
+                </button>
+              </Link>
             </div>
           </div>
         </div>
