@@ -2,6 +2,10 @@ import Footer from "components/Footer";
 import Nav from "components/Nav";
 import Header from "components/Header";
 import ComputerMemory from "components/ComputerMemory";
+import Tools from "components/Tools";
+import Desktop from "components/Desktop";
+import ShippingFast from "components/ShippingFast";
+import Checkmark from "components/Checkmark";
 
 export default function Home() {
   return (
@@ -53,18 +57,7 @@ export default function Home() {
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-200 rounded flex p-4 h-full items-center">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={3}
-                  className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                  <path d="M22 4L12 14.01l-3-3" />
-                </svg>
+                <Checkmark />
                 <span className="title-font font-medium">
                   Fast and Efficent
                 </span>
@@ -72,18 +65,7 @@ export default function Home() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-200 rounded flex p-4 h-full items-center">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={3}
-                  className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                  <path d="M22 4L12 14.01l-3-3" />
-                </svg>
+                <Checkmark />
                 <span className="title-font font-medium">
                   Carefully Selected Parts From Trusted Brands
                 </span>
@@ -91,18 +73,7 @@ export default function Home() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-200 rounded flex p-4 h-full items-center">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={3}
-                  className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                  <path d="M22 4L12 14.01l-3-3" />
-                </svg>
+                <Checkmark />
                 <span className="title-font font-medium">
                   Handled Carefully
                 </span>
@@ -110,18 +81,7 @@ export default function Home() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-200 rounded flex p-4 h-full items-center">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={3}
-                  className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                  <path d="M22 4L12 14.01l-3-3" />
-                </svg>
+                <Checkmark />
                 <span className="title-font font-medium">
                   Quick Construction Time
                 </span>
@@ -129,35 +89,13 @@ export default function Home() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-200 rounded flex p-4 h-full items-center">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={3}
-                  className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                  <path d="M22 4L12 14.01l-3-3" />
-                </svg>
+                <Checkmark />
                 <span className="title-font font-medium">Stress Tested</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-200 rounded flex p-4 h-full items-center">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={3}
-                  className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                  <path d="M22 4L12 14.01l-3-3" />
-                </svg>
+                <Checkmark />
                 <span className="title-font font-medium">High Durability</span>
               </div>
             </div>
@@ -207,17 +145,7 @@ export default function Home() {
             </div>
             <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
               <div className="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  className="w-12 h-12"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                </svg>
+                <Tools />
               </div>
               <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                 <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
@@ -240,18 +168,7 @@ export default function Home() {
             </div>
             <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
               <div className="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  className="w-12 h-12"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx={12} cy={5} r={3} />
-                  <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3" />
-                </svg>
+                <Desktop />
               </div>
               <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                 <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
@@ -273,18 +190,7 @@ export default function Home() {
             </div>
             <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
               <div className="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  className="w-12 h-12"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                  <circle cx={12} cy={7} r={4} />
-                </svg>
+                <ShippingFast />
               </div>
               <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                 <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
