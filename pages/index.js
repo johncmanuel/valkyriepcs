@@ -19,8 +19,8 @@ export default function Home() {
       <Nav />
 
       {/* Hero Section */}
-      <section className="pb-16 pt-16">
-        <article className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <section className="py-24 px-4">
+        <article className="container mx-auto flex md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <header>
               <h1 className="lg:text-5xl text-4xl mb-4 font-medium text-gray-900">
@@ -52,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* Features section */}
-      <section className="py-20 px-5 bg-gray-100">
+      <section className="py-20 px-5 bg-transparent">
         <div className="container mx-auto">
           <div className="text-center mb-20">
             <h1 className="lg:text-5xl text-4xl font-medium text-center title-font text-gray-900 mb-4">
@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* Steps section */}
-      <section className="py-20 px-5">
+      <section className="py-20 px-5 bg-gray-100">
         <div className="container mx-auto flex flex-wrap">
           <div className="flex flex-col w-full text-center mb-20">
             <h1 className="lg:text-5xl text-4xl font-medium text-center title-font text-gray-900 mb-4">
@@ -223,19 +223,37 @@ export default function Home() {
               Our Past Sales
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-xl">
-              Here are some computers that we built for our very first
-              customers!
+              Here are some pictures of computers that we built for our very
+              first customers!
             </p>
           </div>
           <div className="flex flex-wrap -mx-4 overflow-hidden">
-            <div className="my-4 px-4 w-full overflow-hidden xl:w-1/2">
-              <img src="/imgs/pc1.jpg" className="" alt="First Computer" />
+            <div className="my-4 px-4 w-full xl:w-1/2">
+              <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
+                <img
+                  src="/imgs/pc1.jpg"
+                  className="rounded-lg"
+                  alt="First Computer"
+                />
+              </div>
             </div>
-            <div className="my-4 px-4 w-full overflow-hidden xl:w-1/2">
-              <img src="/imgs/pc2.jpg" className="" alt="Second Computer" />
+            <div className="my-4 px-4 w-full xl:w-1/2">
+              <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
+                <img
+                  src="/imgs/pc2.jpg"
+                  className="rounded-lg"
+                  alt="Second Computer"
+                />
+              </div>
             </div>
-            <div className="my-4 px-4 w-full overflow-hidden xl:w-1/2">
-              <img src="/imgs/pc3.jpg" className="" alt="Third Computer" />
+            <div className="my-4 px-4 w-full xl:w-1/2">
+              <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
+                <img
+                  src="/imgs/pc3.jpg"
+                  className="rounded-lg shadow-md"
+                  alt="Third Computer"
+                />
+              </div>
             </div>
           </div>
         </div>
