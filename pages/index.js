@@ -51,6 +51,59 @@ export default function Home() {
         </article>
       </section>
 
+      {/* Showcase */}
+      <section className="px-5 py-12 bg-gray-100">
+        <div className="container mx-auto">
+          <div className="flex flex-col">
+            <div className="h-1 bg-gray-200 rounded overflow-hidden">
+              <div className="w-24 h-full bg-indigo-500" />
+            </div>
+            <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+              <h1 className="sm:w-2/5 text-gray-900 text-center md:text-left font-medium title-font text-4xl mb-2 sm:mb-0">
+                Our Product Showcase
+              </h1>
+              {/* <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
+              </p> */}
+            </div>
+          </div>
+          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div className="h-65">
+                <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
+                  <img
+                    alt="Computer 2 Interior"
+                    className="object-cover object-center h-full w-full rounded-lg"
+                    src="/imgs/pc2_int.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div className="h-65">
+                <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
+                  <img
+                    alt="Computer 1 Interior"
+                    className="object-cover object-center h-full w-full rounded-lg"
+                    src="/imgs/pc1_int.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div className="h-65">
+                <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
+                  <img
+                    alt="Computer 3 Interior"
+                    className="object-cover object-center h-full w-full rounded-lg"
+                    src="/imgs/pc3_int.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features section */}
       <section className="py-20 px-5 bg-transparent">
         <div className="container mx-auto">
