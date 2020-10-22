@@ -10,6 +10,16 @@ import Checkmark from "components/Checkmark";
 import { COMPANY } from "data/company.json";
 import HeadTitle from "components/HeadTitle";
 
+// Using an array to store text and avoid repeating HTML and CSS
+const features_list = [
+  "Fast and Efficent",
+  "Carefully Selected Parts From Trusted Brands",
+  "Handled Carefully",
+  "Quick Construction Time",
+  "Stress Tested",
+  "High Durability",
+];
+
 export default function Home() {
   return (
     <>
@@ -117,50 +127,14 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-200 rounded flex p-4 h-full items-center">
-                <Checkmark />
-                <span className="title-font font-medium">
-                  Fast and Efficent
-                </span>
+            {features_list.map((item, key) => (
+              <div className="p-2 sm:w-1/2 w-full" key={key}>
+                <div className="bg-gray-200 rounded flex p-4 h-full items-center">
+                  <Checkmark />
+                  <span className="title-font font-medium">{item}</span>
+                </div>
               </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-200 rounded flex p-4 h-full items-center">
-                <Checkmark />
-                <span className="title-font font-medium">
-                  Carefully Selected Parts From Trusted Brands
-                </span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-200 rounded flex p-4 h-full items-center">
-                <Checkmark />
-                <span className="title-font font-medium">
-                  Handled Carefully
-                </span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-200 rounded flex p-4 h-full items-center">
-                <Checkmark />
-                <span className="title-font font-medium">
-                  Quick Construction Time
-                </span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-200 rounded flex p-4 h-full items-center">
-                <Checkmark />
-                <span className="title-font font-medium">Stress Tested</span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-200 rounded flex p-4 h-full items-center">
-                <Checkmark />
-                <span className="title-font font-medium">High Durability</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
