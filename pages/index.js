@@ -19,8 +19,8 @@ export default function Home() {
       <Nav />
 
       {/* Hero Section */}
-      <section className="py-24 px-4">
-        <article className="container mx-auto flex md:flex-row flex-col items-center">
+      <section className="py-24 bg-transparent">
+        <article className="container mx-auto px-4 sm:px-6 flex md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <header>
               <h1 className="lg:text-5xl text-4xl mb-4 font-medium text-gray-900">
@@ -52,15 +52,15 @@ export default function Home() {
       </section>
 
       {/* Showcase */}
-      <section className="px-5 py-12 bg-gray-100">
-        <div className="container mx-auto">
+      <section className="py-10 bg-gray-100">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="flex flex-col">
             <div className="h-1 bg-gray-200 rounded overflow-hidden">
               <div className="w-24 h-full bg-indigo-500" />
             </div>
             <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
               <h1 className="sm:w-2/5 text-gray-900 text-center md:text-left font-medium title-font text-4xl mb-2 sm:mb-0">
-                Our Product Showcase
+                Products
               </h1>
               {/* <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
               </p> */}
@@ -105,8 +105,8 @@ export default function Home() {
       </section>
 
       {/* Features section */}
-      <section className="py-20 px-5 bg-transparent">
-        <div className="container mx-auto">
+      <section className="py-20 bg-transparent">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-20">
             <h1 className="lg:text-5xl text-4xl font-medium text-center title-font text-gray-900 mb-4">
               Why Pick Us?
@@ -166,8 +166,8 @@ export default function Home() {
       </section>
 
       {/* Steps section */}
-      <section className="py-20 px-5 bg-gray-100">
-        <div className="container mx-auto flex flex-wrap">
+      <section className="py-20 bg-gray-100">
+        <div className="container mx-auto flex flex-wrap px-4 sm:px-6">
           <div className="flex flex-col w-full text-center mb-20">
             <h1 className="lg:text-5xl text-4xl font-medium text-center title-font text-gray-900 mb-4">
               How We Work
@@ -269,8 +269,8 @@ export default function Home() {
       </section>
 
       {/* Gallery */}
-      <section className="py-20 px-5 bg-transparent">
-        <div className="container mx-auto">
+      <section className="py-20 bg-transparent">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="lg:text-5xl text-4xl font-medium title-font mb-4 text-gray-900">
               Our Past Sales
@@ -313,8 +313,8 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-6 px-5 bg-gray-100">
-        <div className="container px-5 py-24 mx-auto">
+      <section className="py-6 bg-gray-100">
+        <div className="container px-4 sm:px-6 py-12 mx-auto">
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/2 w-full">
               <div className="h-full bg-gray-200 p-8 rounded">
