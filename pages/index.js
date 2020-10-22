@@ -11,6 +11,7 @@ import { COMPANY } from "data/company.json";
 import HeadTitle from "components/HeadTitle";
 
 // Using an array to store text and avoid repeating HTML and CSS
+// in the features section
 const features_list = [
   "Fast and Efficent",
   "Carefully Selected Parts From Trusted Brands",
@@ -18,6 +19,40 @@ const features_list = [
   "Quick Construction Time",
   "Stress Tested",
   "High Durability",
+];
+
+// Using an array of objects to store text and avoid repeating HTML and CSS
+// in the showcase section
+const pc_int_list = [
+  {
+    img_path: "/imgs/pc2_int.jpg",
+    alt: "Computer 2 Interior",
+  },
+  {
+    img_path: "/imgs/pc1_int.jpg",
+    alt: "Computer 1 Interior",
+  },
+  {
+    img_path: "/imgs/pc3_int.jpg",
+    alt: "Computer 3 Interior",
+  },
+];
+
+// Using an array of objects to store text and avoid repeating HTML and CSS
+// in the gallery section
+const pc_list = [
+  {
+    img_path: "/imgs/pc2.jpg",
+    alt: "Computer 2",
+  },
+  {
+    img_path: "/imgs/pc1.jpg",
+    alt: "Computer 1",
+  },
+  {
+    img_path: "/imgs/pc3.jpg",
+    alt: "Computer 3",
+  },
 ];
 
 export default function Home() {
@@ -77,39 +112,19 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div className="h-65">
-                <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
-                  <img
-                    alt="Computer 2 Interior"
-                    className="object-cover object-center h-full w-full rounded-lg"
-                    src="/imgs/pc2_int.jpg"
-                  />
+            {pc_int_list.map((item, key) => (
+              <div className="p-4 md:w-1/3 sm:mb-0 mb-6" key={key}>
+                <div className="h-65">
+                  <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
+                    <img
+                      alt={item.alt}
+                      className="object-cover object-center h-full w-full rounded-lg"
+                      src={item.img_path}
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div className="h-65">
-                <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
-                  <img
-                    alt="Computer 1 Interior"
-                    className="object-cover object-center h-full w-full rounded-lg"
-                    src="/imgs/pc1_int.jpg"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div className="h-65">
-                <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
-                  <img
-                    alt="Computer 3 Interior"
-                    className="object-cover object-center h-full w-full rounded-lg"
-                    src="/imgs/pc3_int.jpg"
-                  />
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
