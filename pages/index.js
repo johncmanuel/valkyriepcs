@@ -64,15 +64,15 @@ export default function Home() {
       <Nav />
 
       {/* Hero Section */}
-      <section className="py-24 bg-transparent">
+      <section className="py-32 bg-transparent">
         <article className="container mx-auto px-4 sm:px-6 flex md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <header>
-              <h1 className="lg:text-5xl text-4xl mb-4 font-medium text-gray-900">
-                {COMPANY.name}
+              <h1 className="text-4xl mb-4 font-medium text-gray-900">
+                The Independent Computer Building Business
               </h1>
               <br className="inline-block" />
-              <h3 className="sm:text-2xl text-xl mb-4 font-medium text-gray-900">
+              <h3 className="sm:text-2xl text-xl mb-4 font-medium font-serif text-gray-900">
                 {COMPANY.motto}
               </h3>
             </header>
@@ -104,7 +104,7 @@ export default function Home() {
               <div className="w-24 h-full bg-indigo-500" />
             </div>
             <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-              <h1 className="sm:w-2/5 text-gray-900 text-center md:text-left font-medium title-font text-4xl mb-2 sm:mb-0">
+              <h1 className="sm:w-2/5 text-gray-900 text-center md:text-left font-medium text-4xl mb-2 sm:mb-0">
                 Products
               </h1>
               {/* <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
@@ -133,10 +133,10 @@ export default function Home() {
       <section className="py-20 bg-transparent">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-20">
-            <h1 className="lg:text-5xl text-4xl font-medium text-center title-font text-gray-900 mb-4">
+            <h1 className="lg:text-5xl text-4xl font-medium text-center text-gray-900 mb-4">
               Why Pick Us?
             </h1>
-            <p className="text-xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+            <p className="text-xl font-serif leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
               At Valkyrie PCs, we ensure that our computers are carefully built
               to meet your expectations.
             </p>
@@ -158,10 +158,10 @@ export default function Home() {
       <section className="py-20 bg-gray-100">
         <div className="container mx-auto flex flex-wrap px-4 sm:px-6">
           <div className="flex flex-col w-full text-center mb-20">
-            <h1 className="lg:text-5xl text-4xl font-medium text-center title-font text-gray-900 mb-4">
+            <h1 className="lg:text-5xl text-4xl font-medium text-center text-gray-900 mb-4">
               How We Work
             </h1>
-            <p className="text-xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+            <p className="text-xl font-serif leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
               We take pride in our craft, but we also take pride in our process.
             </p>
           </div>
@@ -264,7 +264,7 @@ export default function Home() {
             <h1 className="lg:text-5xl text-4xl font-medium title-font mb-4 text-gray-900">
               Our Past Sales
             </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-xl">
+            <p className="lg:w-2/3 font-serif mx-auto leading-relaxed text-xl">
               Here are some pictures of computers that we built for our very
               first customers!
             </p>
