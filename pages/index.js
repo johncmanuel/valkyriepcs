@@ -270,33 +270,17 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-wrap -mx-4 overflow-hidden">
-            <div className="my-4 px-4 w-full xl:w-1/2">
-              <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
-                <img
-                  src="/imgs/pcs/pc1.jpg"
-                  className="rounded-lg"
-                  alt="First Computer"
-                />
+            {pc_list.map((item, key) => (
+              <div className="my-4 px-4 w-full xl:w-1/2" key={key}>
+                <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
+                  <img
+                    src={item.img_path}
+                    className="rounded-lg"
+                    alt={item.alt}
+                  />
+                </div>
               </div>
-            </div>
-            <div className="my-4 px-4 w-full xl:w-1/2">
-              <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
-                <img
-                  src="/imgs/pcs/pc2.jpg"
-                  className="rounded-lg"
-                  alt="Second Computer"
-                />
-              </div>
-            </div>
-            <div className="my-4 px-4 w-full xl:w-1/2">
-              <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
-                <img
-                  src="/imgs/pcs/pc3.jpg"
-                  className="rounded-lg shadow-md"
-                  alt="Third Computer"
-                />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
