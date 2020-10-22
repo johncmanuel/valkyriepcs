@@ -306,7 +306,7 @@ export default function Home() {
         <div className="container px-4 sm:px-6 mx-auto">
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/2 w-full">
-              <div className="h-full bg-gray-200 p-8 rounded">
+              <div className="h-full bg-gray-200 p-8 rounded shadow-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -337,7 +337,7 @@ export default function Home() {
               </div>
             </div>
             <div className="p-4 md:w-1/2 w-full">
-              <div className="h-full bg-gray-200 p-8 rounded">
+              <div className="h-full bg-gray-200 p-8 rounded shadow-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
