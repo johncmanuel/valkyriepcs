@@ -25,15 +25,15 @@ const features_list = [
 // in the showcase section
 const pc_int_list = [
   {
-    img_path: "/imgs/pc2_int.jpg",
+    img_path: "/imgs/pcs/pc2_int.jpg",
     alt: "Computer 2 Interior",
   },
   {
-    img_path: "/imgs/pc1_int.jpg",
+    img_path: "/imgs/pcs/pc1_int.jpg",
     alt: "Computer 1 Interior",
   },
   {
-    img_path: "/imgs/pc3_int.jpg",
+    img_path: "/imgs/pcs/pc3_int.jpg",
     alt: "Computer 3 Interior",
   },
 ];
@@ -42,15 +42,15 @@ const pc_int_list = [
 // in the gallery section
 const pc_list = [
   {
-    img_path: "/imgs/pc2.jpg",
+    img_path: "/imgs/pcs/pc2.jpg",
     alt: "Computer 2",
   },
   {
-    img_path: "/imgs/pc1.jpg",
+    img_path: "/imgs/pcs/pc1.jpg",
     alt: "Computer 1",
   },
   {
-    img_path: "/imgs/pc3.jpg",
+    img_path: "/imgs/pcs/pc3.jpg",
     alt: "Computer 3",
   },
 ];
@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       {/* Showcase */}
-      <section className="py-10 bg-gray-100">
+      <section className="py-20 bg-gray-100">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex flex-col">
             <div className="h-1 bg-gray-200 rounded overflow-hidden">
@@ -273,7 +273,7 @@ export default function Home() {
             <div className="my-4 px-4 w-full xl:w-1/2">
               <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
                 <img
-                  src="/imgs/pc1.jpg"
+                  src="/imgs/pcs/pc1.jpg"
                   className="rounded-lg"
                   alt="First Computer"
                 />
@@ -282,7 +282,7 @@ export default function Home() {
             <div className="my-4 px-4 w-full xl:w-1/2">
               <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
                 <img
-                  src="/imgs/pc2.jpg"
+                  src="/imgs/pcs/pc2.jpg"
                   className="rounded-lg"
                   alt="Second Computer"
                 />
@@ -291,7 +291,7 @@ export default function Home() {
             <div className="my-4 px-4 w-full xl:w-1/2">
               <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
                 <img
-                  src="/imgs/pc3.jpg"
+                  src="/imgs/pcs/pc3.jpg"
                   className="rounded-lg shadow-md"
                   alt="Third Computer"
                 />
@@ -372,8 +372,8 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-5">
-        <div className="max-w-screen-xl mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+      <section className="py-20 bg-transparent">
+        <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-4 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 lg:text-left text-center">
             Ready for a new PC?
             <br />
