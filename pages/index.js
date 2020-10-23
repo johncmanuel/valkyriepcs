@@ -9,6 +9,7 @@ import ShippingFast from "components/ShippingFast";
 import Checkmark from "components/Checkmark";
 import { COMPANY } from "data/company.json";
 import HeadTitle from "components/HeadTitle";
+import CTA from "components/CTA";
 
 // Using an array to store text and avoid repeating HTML and CSS
 // in the features section
@@ -299,7 +300,7 @@ export default function Home() {
                 >
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z" />
                 </svg>
-                <p className="leading-relaxed mb-6">
+                <p className="leading-relaxed mb-6 font-serif">
                   Synth chartreuse iPhone lomo cray raw denim brunch everyday
                   carry neutra before they sold out fixie 90's microdosing.
                   Tacos pinterest fanny pack venmo, post-ironic heirloom
@@ -330,7 +331,7 @@ export default function Home() {
                 >
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z" />
                 </svg>
-                <p className="leading-relaxed mb-6">
+                <p className="leading-relaxed mb-6 font-serif">
                   Synth chartreuse iPhone lomo cray raw denim brunch everyday
                   carry neutra before they sold out fixie 90's microdosing.
                   Tacos pinterest fanny pack venmo, post-ironic heirloom
@@ -355,32 +356,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-transparent">
-        <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-4 lg:flex lg:items-center lg:justify-between">
-          <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 lg:text-left text-center">
-            Ready for a new PC?
-            <br />
-            <span className="text-indigo-600">Let's build it.</span>
-          </h2>
-          <div className="mt-8 flex lg:flex-shrink-0 lg:mt-0 justify-center">
-            <div className="inline-flex">
-              <Link href="/pricing">
-                <button className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-                  Get Started
-                </button>
-              </Link>
-            </div>
-            <div className="inline-flex">
-              <Link href="/about">
-                <button className="ml-4 sinline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-gray-700 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-                  About Us
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTA />
 
       <Footer />
     </>
