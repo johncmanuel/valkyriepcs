@@ -2,6 +2,7 @@ import Footer from "components/Footer";
 import Nav from "components/Nav";
 import Header from "components/Header";
 import HeadTitle from "components/HeadTitle";
+import CTA from "components/CTA";
 
 export default function About() {
   return (
@@ -12,8 +13,8 @@ export default function About() {
       <Nav />
 
       {/* Team Section */}
-      <section className="text-gray-700 py-44 bg-transparent">
-        <div className="container lg:px-5 px-24 py-24 mx-auto">
+      <section className="py-20 bg-transparent">
+        <div className="container px-4 sm:px-6 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="text-2xl font-medium title-font mb-4 text-gray-900">
               OUR TEAM
@@ -35,7 +36,7 @@ export default function About() {
                   <h3 className="text-gray-500 mb-3">
                     Co-Founder, Developer, & Entrepreneur
                   </h3>
-                  <p className="mb-4">desc.</p>
+                  <p className="mb-4 text-sm">desc.</p>
                   <span className="inline-flex">
                     <a className="text-gray-500">
                       <svg
@@ -135,8 +136,8 @@ export default function About() {
               <div className="h-full flex flex-col items-center text-center">
                 <img
                   alt="team"
-                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
-                  src="https://dummyimage.com/202x202"
+                  className="flex-shrink-0 rounded-lg  object-cover object-center mb-4"
+                  src="/imgs/people/eman.jpg"
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
@@ -145,7 +146,14 @@ export default function About() {
                   <h3 className="text-gray-500 mb-3">
                     Co-Founder, Developer, & Entrepreneur
                   </h3>
-                  <p className="mb-4">desc.</p>
+                  <p className="mb-4 text-sm">
+                    Hello! I specialize in webbrowser automation, webscraping,
+                    and API integration, as well extensive knowledge in
+                    ecommerce including techniques for optimizing listings and
+                    increasing traffic. I have combined my passion for
+                    programming and entrepreneurship to develop innovative
+                    methods for growing businesses.
+                  </p>
                   <span className="inline-flex">
                     <a className="text-gray-500">
                       <svg
@@ -190,6 +198,8 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <CTA />
 
       <Footer />
     </>
