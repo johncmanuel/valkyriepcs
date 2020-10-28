@@ -12,6 +12,7 @@ import HeadTitle from "components/HeadTitle";
 import CTA from "components/CTA";
 import Container from "components/Container";
 import Section from "components/Section";
+import RoundedButton from "components/RoundedButton";
 
 // Using an array to store text and avoid repeating HTML and CSS
 // in the features section
@@ -82,15 +83,18 @@ export default function Home() {
             <br className="inline-block" />
           </div>
           <div className="flex justify-center">
-            <Link href="/pricing">
-              <button className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-                Get Started
-              </button>
+            <Link href="/pricing" passHref>
+              <RoundedButton>Get Started</RoundedButton>
             </Link>
-            <Link href="/about">
-              <button className="ml-4 sinline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-full text-gray-700 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+            <Link href="/about" passHref>
+              <RoundedButton
+                classes="ml-4"
+                textColor="text-gray-700"
+                background="bg-gray-200"
+                backgroundHover="hover:bg-gray-300"
+              >
                 About Us
-              </button>
+              </RoundedButton>
             </Link>
           </div>
           {/* <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
