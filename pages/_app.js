@@ -18,7 +18,6 @@ function MyApp({ Component, pageProps }) {
           content="text/html; charset=utf-8"
           key="http"
         />
-        <title>Valkyrie PCs</title>
       </Head>
       <Component {...pageProps} />
     </>
