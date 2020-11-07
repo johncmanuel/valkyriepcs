@@ -44,30 +44,30 @@ function Dropdown() {
             <div className="rounded-lg shadow-xs overflow-hidden">
               <div className="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                 {/* About link */}
-                <div className="-m-3 p-3 flex items-center space-x-4 rounded-lg cursor-pointer hover:bg-gray-50 transition ease-in-out duration-150">
-                  <Link href="/about">
+                <Link href="/about">
+                  <div className="-m-3 p-3 flex items-center space-x-4 rounded-lg cursor-pointer hover:bg-gray-50 transition ease-in-out duration-150">
                     <div className="space-y-1">
                       <p className="text-base leading-6 font-medium text-gray-900">
                         About
                       </p>
                       {/* <p className="text-sm leading-5 text-gray-500"></p> */}
                     </div>
-                  </Link>
-                </div>
+                  </div>
+                </Link>
                 {/* Blog link */}
-                <div className="-m-3 p-3 flex items-start space-x-4 rounded-lg cursor-pointer hover:bg-gray-50 transition ease-in-out duration-150">
-                  <Link
-                    href="/blog"
-                    className="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
-                  >
+                <Link
+                  href="/blog"
+                  className="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
+                >
+                  <div className="-m-3 p-3 flex items-start space-x-4 rounded-lg cursor-pointer hover:bg-gray-50 transition ease-in-out duration-150">
                     <div className="space-y-1">
                       <p className="text-base leading-6 font-medium text-gray-900">
                         Blog
                       </p>
                       {/* <p className="text-sm leading-5 text-gray-500"></p> */}
                     </div>
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
