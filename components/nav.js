@@ -4,31 +4,22 @@ import Link from "next/link";
 
 function Dropdown() {
   const [isOn, setIsOn] = useState(false);
-  const [inMenu, setInMenu] = useState(false);
+
   return (
     <>
       <button
         type="button"
-        aria-checked={isOn}
         onMouseEnter={() => {
-          setIsOn(!isOn);
-          console.log("isOn: " + !isOn);
-          if (isOn === true) {
-            console.log("isOn is true, thus inMenu is true!");
-            setInMenu(!inMenu);
-          }
+          setIsOn(true);
         }}
         onMouseLeave={() => {
-          if (inMenu !== true) {
-            console.log("inMenu is false, so I must make isOn false.");
-            setIsOn(false);
-          }
+          setIsOn(false);
         }}
         className={`${
           isOn ? "text-gray-900" : "text-gray-500"
         } inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150`}
       >
-        <span>Company</span>
+        <span className="cursor-default">Company</span>
       </button>
 
       <Transition
@@ -41,12 +32,10 @@ function Dropdown() {
         leaveFrom="opacity-100 translate-y-0"
         leaveTo="opacity-0 translate-y-1"
         onMouseEnter={() => {
-          setInMenu(!inMenu);
-          console.log("inMenu: " + inMenu);
+          setIsOn(true);
         }}
         onMouseLeave={() => {
           setIsOn(false);
-          console.log("inMenu: " + inMenu);
         }}
       >
         {/* Show desktop menu */}
@@ -54,32 +43,31 @@ function Dropdown() {
           <div className="rounded-lg shadow-2xl">
             <div className="rounded-lg shadow-xs overflow-hidden">
               <div className="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                <a
-                  href="#"
-                  className="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
-                >
-                  <div className="space-y-1">
-                    {/* Create a JSON that tracks all of the 'Company' listings */}
-                    <p className="text-base leading-6 font-medium text-gray-900">
-                      About
-                    </p>
-                    {/* <p className="text-sm leading-5 text-gray-500">
-                                        
-                                    </p> */}
-                  </div>
-                </a>
-                <a
-                  href="#"
-                  className="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
-                >
-                  <div className="space-y-1">
-                    <p className="text-base leading-6 font-medium text-gray-900">
-                      Events
-                    </p>
-                    {/* <p className="text-sm leading-5 text-gray-500">
-                                    </p> */}
-                  </div>
-                </a>
+                {/* About link */}
+                <div className="-m-3 p-3 flex items-center space-x-4 rounded-lg cursor-pointer hover:bg-gray-50 transition ease-in-out duration-150">
+                  <Link href="/about">
+                    <div className="space-y-1">
+                      <p className="text-base leading-6 font-medium text-gray-900">
+                        About
+                      </p>
+                      {/* <p className="text-sm leading-5 text-gray-500"></p> */}
+                    </div>
+                  </Link>
+                </div>
+                {/* Blog link */}
+                <div className="-m-3 p-3 flex items-start space-x-4 rounded-lg cursor-pointer hover:bg-gray-50 transition ease-in-out duration-150">
+                  <Link
+                    href="/blog"
+                    className="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
+                  >
+                    <div className="space-y-1">
+                      <p className="text-base leading-6 font-medium text-gray-900">
+                        Blog
+                      </p>
+                      {/* <p className="text-sm leading-5 text-gray-500"></p> */}
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -96,8 +84,9 @@ export default function Nav() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
             <div className="lg:w-0 lg:flex-1">
+              {/* Home */}
               <Link href="/">
-                <a className="flex text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+                <a className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
                   Valkyrie PCs
                 </a>
               </Link>
@@ -124,15 +113,16 @@ export default function Nav() {
               </button>
             </div>
             <nav className="hidden md:flex space-x-10">
+              {/* Pricing */}
+              <div className="text-base leading-6 font-medium cursor-default text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+                <Link href="/pricing">Pricing</Link>
+              </div>
+              {/* Contact */}
               <a
-                href="#"
-                className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
-              >
-                Pricing
-              </a>
-              <a
-                href="#"
-                className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:valkyriepcs@gmail.com"
+                className="text-base leading-6 font-medium cursor-default text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
               >
                 Contact
               </a>
@@ -153,7 +143,6 @@ export default function Nav() {
                     </div> */}
           </div>
         </div>
-
         {/*
                 Mobile menu, show/hide based on mobile menu state.
 
