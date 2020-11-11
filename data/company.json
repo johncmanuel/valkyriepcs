@@ -1,6 +1,10 @@
 {
   "COMPANY": {
-    "name": "Valkyrie PCs",
-    "motto": "Building computers for anyone at any price."
+    "name": "SiComps",
+    "motto": "Building computers for anyone at any price.",
+    "meta_title": "SiComps — Computer Building Services",
+    "meta_desc": "Trusted by many, SiComps is dedicated to building the latest, high-speed computers at any budget.",
+    "url": "url",
+    "img": "img"
   }
 }
