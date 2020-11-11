@@ -14,6 +14,7 @@ import Container from "components/Container";
 import Section from "components/Section";
 import RoundedButton from "components/RoundedButton";
 import QuotationMark from "components/icons/QuotationMark";
+import Image from "next/image";
 
 // Using an array to store text and avoid repeating HTML and CSS
 // in the features section
@@ -127,10 +128,15 @@ export default function Home() {
               <div className="p-4 md:w-1/3 sm:mb-0 mb-6" key={key}>
                 <div className="h-65">
                   <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
-                    <img
+                    <Image
                       alt={item.alt}
                       className="object-cover object-center h-full w-full rounded-lg"
                       src={item.img_path}
+                      quality={100}
+                      // It seems like height and width doesn't override the classes
+                      // provided by Tailwind CSS. Odd.
+                      height={500}
+                      width={500}
                     />
                   </div>
                 </div>
@@ -285,10 +291,15 @@ export default function Home() {
             {pc_list.map((item, key) => (
               <div className="my-4 px-4 w-full xl:w-1/2" key={key}>
                 <div className="bg-gray-200 bg-cover shadow-lg rounded-lg py-4 px-4">
-                  <img
+                  <Image
                     src={item.img_path}
                     className="rounded-lg"
                     alt={item.alt}
+                    quality={100}
+                    // Now this one is affected by Image component's
+                    // height and width
+                    height={1000}
+                    width={1000}
                   />
                 </div>
               </div>
@@ -330,11 +341,11 @@ export default function Home() {
                   try-hard pabst authentic iceland.
                 </p>
                 <a className="inline-flex items-center">
-                  <img
+                  {/* <img
                     alt="testimonial"
                     src="https://dummyimage.com/107x107"
                     className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
-                  />
+                  /> */}
                   <span className="flex-grow flex flex-col pl-4">
                     <span className="title-font font-medium text-gray-900">
                       Alper Kamu
