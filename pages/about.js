@@ -5,6 +5,7 @@ import HeadTitle from "components/HeadTitle";
 import CTA from "components/CTA";
 import Section from "components/Section";
 import Container from "components/Container";
+import Image from "next/image";
 
 // Array of objects that contain all the sweet information about us three.
 const bio = [
@@ -54,16 +55,19 @@ export default function About() {
             {bio.map((item, key) => (
               <div className="p-4 lg:w-1/3 md:w-1/2" key={key}>
                 <div className="h-full flex flex-col items-center text-center">
-                  <img
+                  <Image
                     alt={item.alt}
-                    className="flex-shrink-0 rounded-lg w-full h-96 object-cover object-center mb-4"
+                    className="flex-shrink-0 rounded-lg object-cover object-center mb-4"
                     src={item.img_path}
+                    quality={100}
+                    height={500}
+                    width={500}
                   />
-                  <div className="w-full">
+                  <div className="w-full pt-4">
                     <h2 className="font-medium text-lg text-gray-900">
                       {item.name}
                     </h2>
-                    <h3 className="text-gray-500 mb-3">{item.label}</h3>
+                    <h3 className="text-gray-500 mb-3 pt-2">{item.label}</h3>
                     <p className="mb-4 text-sm">{item.desc}</p>
                     <span className="inline-flex">
                       {/* <a className="text-gray-500"></a>
