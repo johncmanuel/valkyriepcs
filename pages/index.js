@@ -69,6 +69,9 @@ export default function Home() {
       <Nav />
 
       {/* Hero Section */}
+
+      {/* Making this specific section tag different from the normal Section component. 
+          Will consider making the Section component more customizable */}
       <section className="py-32 bg-transparent">
         <article className="container mx-auto px-4 sm:px-6 flex md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -138,7 +141,7 @@ export default function Home() {
       </Section>
 
       {/* Features section */}
-      <section className="py-20 bg-transparent">
+      <Section>
         <Container>
           <div className="text-center mb-20">
             <h1 className="lg:text-5xl text-4xl font-medium text-center text-gray-900 mb-4">
@@ -160,10 +163,10 @@ export default function Home() {
             ))}
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* Steps section */}
-      <section className="py-20 bg-gray-100">
+      <Section background="bg-gray-100">
         <Container>
           <div className="flex flex-col flex-wrap w-full text-center mb-20">
             <h1 className="lg:text-5xl text-4xl font-medium text-center text-gray-900 mb-4">
@@ -264,10 +267,10 @@ export default function Home() {
             </div>
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* Gallery */}
-      <section className="py-20 bg-transparent">
+      <Section>
         <Container>
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="lg:text-5xl text-4xl font-medium title-font mb-4 text-gray-900">
@@ -292,10 +295,10 @@ export default function Home() {
             ))}
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-gray-100">
+      <Section background="bg-gray-100">
         <Container>
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/2 w-full">
@@ -305,7 +308,7 @@ export default function Home() {
                   This is a great company that is adept at creating computers.
                   Customer service is some of the best I have encountered so
                   far. Despite all of this their prices are incredibly
-                  reasonable and fair. Worth every penny!
+                  reasonable and fair. Worth every penny! 5 stars!
                 </p>
                 <a className="inline-flex items-center">
                   <span className="flex-grow flex flex-col pl-4">
@@ -343,7 +346,7 @@ export default function Home() {
             </div>
           </div>
         </Container>
-      </section>
+      </Section>
 
       <CTA />
 
