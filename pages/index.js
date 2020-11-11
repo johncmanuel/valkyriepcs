@@ -2,17 +2,18 @@ import Link from "next/link";
 import Footer from "components/Footer";
 import Nav from "components/Nav";
 import Header from "components/Header";
-import ComputerMemory from "components/ComputerMemory";
-import Tools from "components/Tools";
-import Desktop from "components/Desktop";
-import ShippingFast from "components/ShippingFast";
-import Checkmark from "components/Checkmark";
+import ComputerMemory from "components/icons/ComputerMemory";
+import Tools from "components/icons/Tools";
+import Desktop from "components/icons/Desktop";
+import ShippingFast from "components/icons/ShippingFast";
+import Checkmark from "components/icons/Checkmark";
 import { COMPANY } from "data/company.json";
 import HeadTitle from "components/HeadTitle";
 import CTA from "components/CTA";
 import Container from "components/Container";
 import Section from "components/Section";
 import RoundedButton from "components/RoundedButton";
+import QuotationMark from "components/icons/QuotationMark";
 
 // Using an array to store text and avoid repeating HTML and CSS
 // in the features section
@@ -172,6 +173,7 @@ export default function Home() {
               We take pride in our craft, but we also take pride in our process.
             </p>
           </div>
+          {/* The actual step process right here */}
           <div className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
             <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
               <div className="h-full w-1 bg-gray-200 pointer-events-none" />
@@ -185,7 +187,7 @@ export default function Home() {
               </div>
               <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                 <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
-                  Beginning
+                  Start
                 </h2>
                 <p className="leading-relaxed">
                   After sending us your parts list, we order the exact,
@@ -298,45 +300,26 @@ export default function Home() {
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/2 w-full">
               <div className="h-full bg-gray-200 p-8 rounded shadow-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  className="block w-5 h-5 text-gray-400 mb-4"
-                  viewBox="0 0 975.036 975.036"
-                >
-                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z" />
-                </svg>
+                <QuotationMark />
                 <p className="leading-relaxed mb-6 font-serif">
-                  Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                  carry neutra before they sold out fixie 90's microdosing.
-                  Tacos pinterest fanny pack venmo, post-ironic heirloom
-                  try-hard pabst authentic iceland.
+                  This is a great company that is adept at creating computers.
+                  Customer service is some of the best I have encountered so
+                  far. Despite all of this their prices are incredibly
+                  reasonable and fair. Worth every penny!
                 </p>
                 <a className="inline-flex items-center">
-                  <img
-                    alt="testimonial"
-                    src="https://dummyimage.com/106x106"
-                    className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
-                  />
                   <span className="flex-grow flex flex-col pl-4">
                     <span className="title-font font-medium text-gray-900">
-                      Holden Caulfield
+                      John Ishibashi
                     </span>
-                    <span className="text-gray-500 text-sm">UI DEVELOPER</span>
+                    <span className="text-gray-500 text-sm">CUSTOMER</span>
                   </span>
                 </a>
               </div>
             </div>
             <div className="p-4 md:w-1/2 w-full">
               <div className="h-full bg-gray-200 p-8 rounded shadow-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  className="block w-5 h-5 text-gray-400 mb-4"
-                  viewBox="0 0 975.036 975.036"
-                >
-                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z" />
-                </svg>
+                <QuotationMark />
                 <p className="leading-relaxed mb-6 font-serif">
                   Synth chartreuse iPhone lomo cray raw denim brunch everyday
                   carry neutra before they sold out fixie 90's microdosing.
@@ -353,7 +336,7 @@ export default function Home() {
                     <span className="title-font font-medium text-gray-900">
                       Alper Kamu
                     </span>
-                    <span className="text-gray-500 text-sm">DESIGNER</span>
+                    <span className="text-gray-500 text-sm">CUSTOMER</span>
                   </span>
                 </a>
               </div>
