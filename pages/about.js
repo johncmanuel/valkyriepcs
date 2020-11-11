@@ -60,6 +60,8 @@ export default function About() {
                     className="flex-shrink-0 rounded-lg object-cover object-center mb-4"
                     src={item.img_path}
                     quality={100}
+                    // It seems like height and width doesn't override the classes
+                    // provided by Tailwind CSS. Odd.
                     height={500}
                     width={500}
                   />
