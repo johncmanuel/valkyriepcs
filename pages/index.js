@@ -64,7 +64,7 @@ const pc_list = [
 export default function Home() {
   return (
     <>
-      <HeadTitle>{COMPANY.name}</HeadTitle>
+      <HeadTitle>{COMPANY.meta_title}</HeadTitle>
 
       <Header />
       <Nav />
