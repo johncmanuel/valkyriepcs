@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { COMPANY } from "data/company.json";
 
 export default function UnderConstruction() {
   return (
@@ -20,7 +21,7 @@ export default function UnderConstruction() {
             </a>
             ; otherwise, this will be finished as soon as possible!
           </p>
-          <p>— John @ Valkyrie PCs</p>
+          <p>— John @ {COMPANY.name}</p>
         </div>
         <br />
         <h2>
