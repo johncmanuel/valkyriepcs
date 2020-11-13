@@ -309,7 +309,7 @@ export default function Home() {
       </Section>
 
       {/* Testimonials */}
-      <Section background="bg-gray-100">
+      {/* <Section background="bg-gray-100">
         <Container>
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/2 w-full">
@@ -341,11 +341,6 @@ export default function Home() {
                   try-hard pabst authentic iceland.
                 </p>
                 <a className="inline-flex items-center">
-                  {/* <img
-                    alt="testimonial"
-                    src="https://dummyimage.com/107x107"
-                    className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
-                  /> */}
                   <span className="flex-grow flex flex-col pl-4">
                     <span className="title-font font-medium text-gray-900">
                       Alper Kamu
@@ -355,6 +350,26 @@ export default function Home() {
                 </a>
               </div>
             </div>
+          </div>
+        </Container>
+      </Section> */}
+
+      {/* One-Testimonal Section Only */}
+      <Section background="bg-gray-100">
+        <Container>
+          <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+            <QuotationMark />
+            <p className="leading-relaxed text-lg">
+              This is a great company that is adept at creating computers.
+              Customer service is some of the best I have encountered so far.
+              Despite all of this their prices are incredibly reasonable and
+              fair. Worth every penny! 5 stars!
+            </p>
+            <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6" />
+            <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
+              John Ishibashi
+            </h2>
+            <p className="text-gray-500">Customer</p>
           </div>
         </Container>
       </Section>
