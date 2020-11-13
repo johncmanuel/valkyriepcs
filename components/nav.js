@@ -41,7 +41,7 @@ function DropdownDesktop() {
         }}
       >
         {/* Show desktop menu */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 pt-3 px-2 w-screen max-w-md sm:px-0">
+        <div className="absolute left-1/2 transform -translate-x-1/2 pt-3 px-2 w-screen max-w-xs sm:px-0">
           <div className="rounded-lg shadow-2xl">
             <div className="rounded-lg shadow-xs overflow-hidden">
               <div className="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
