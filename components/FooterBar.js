@@ -91,7 +91,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   href="#"
                 >
-                  valkyriepcs@gmail.com
+                  Email
                 </a>
               </li>
             </nav>
