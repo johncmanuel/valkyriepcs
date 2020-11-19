@@ -92,8 +92,9 @@ export default function Footer() {
                   <li className="my-6 md:my-3" key={key}>
                     {/* Since the links in the 'Social' category and 'Contact' 
                         redirects the user to external sites, it's best to use an
-                        <a> tag that opens to a  new tab. Hence, this avoids using the
-                        Link component provided by Next.js. */}
+                        <a> tag that opens to a new tab. Hence, this avoids using the
+                        Link component provided by Next.js, which only opens in the
+                        same tab. */}
                     {element.category === "Social" ||
                     element.category === "Contact" ? (
                       <a
