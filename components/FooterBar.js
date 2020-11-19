@@ -1,6 +1,62 @@
 import Link from "next/link";
 import { COMPANY } from "data/company.json";
 
+const footerContent = [
+  {
+    category: "Company",
+    items: [
+      {
+        name: "About",
+        link: "/about",
+      },
+      {
+        name: "Pricing",
+        link: "/pricing",
+      },
+      {
+        name: "Careers",
+        link: "/careers",
+      },
+    ],
+  },
+  {
+    category: "Resources",
+    items: [
+      {
+        name: "Blog",
+        link: "/blog",
+      },
+      {
+        name: "FAQ",
+        link: "/faq",
+      },
+      // Will add later on in the future.
+      // {
+      //   name: "Customers",
+      //   link: "/customers",
+      // },
+    ],
+  },
+  {
+    category: "Contact",
+    items: [
+      {
+        name: "Email",
+        link: COMPANY.email,
+      },
+    ],
+  },
+  {
+    category: "Social",
+    items: [
+      {
+        name: "Instagram",
+        link: "https://www.instagram.com/valkyriepcs_/",
+      },
+    ],
+  },
+];
+
 export default function Footer() {
   return (
     <footer className="border-gray-100 border-t">
@@ -24,105 +80,42 @@ export default function Footer() {
           </a>
           <p className="mt-2 text-sm text-gray-500">{COMPANY.motto}</p>
         </div>
-        {/* Company */}
+        {/* Links */}
         <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">
-              Company
-            </h2>
-            <nav className="list-none mb-10">
-              <li className="my-6 md:my-3">
-                <Link href="/about">
-                  <a className="text-gray-600 hover:text-gray-800">About</a>
-                </Link>
-              </li>
-              <li className="my-6 md:my-3">
-                <Link href="/pricing">
-                  <a className="text-gray-600 hover:text-gray-800">Pricing</a>
-                </Link>
-              </li>
-              {/* <li className="my-6 md:my-3">
-                                <Link href="/services">
-                                    <a className="text-gray-600 hover:text-gray-800">Services</a>
-                                </Link>
-                            </li>
-                            <li className="my-6 md:my-3">
-                                <Link href="/careers">
-                                    <a className="text-gray-600 hover:text-gray-800">Careers</a>
-                                </Link>
-                            </li> */}
-            </nav>
-          </div>
-          {/* Resources */}
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">
-              Resources
-            </h2>
-            <nav className="list-none mb-10">
-              <li className="my-6 md:my-3">
-                <Link href="/blog">
-                  <a className="text-gray-600 hover:text-gray-800">Blog</a>
-                </Link>
-              </li>
-              <li className="my-6 md:my-3">
-                <Link href="/customers">
-                  <a className="text-gray-600 hover:text-gray-800">Customers</a>
-                </Link>
-              </li>
-            </nav>
-          </div>
-          {/* Products */}
-          {/* <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">
-              Products
-            </h2>
-            <nav className="list-none mb-10">
-              <li className="my-6 md:my-3">
-                <Link href="/computers">
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Desktop Computers
-                  </a>
-                </Link>
-              </li>
+          {footerContent.map((element, key) => (
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4" key={key}>
+              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">
+                {element.category}
+              </h2>
+              <nav className="list-none mb-10">
+                {element.items.map((item, key) => (
+                  <li className="my-6 md:my-3" key={key}>
+                    {/* Since the links in the 'Social' category and 'Contact' 
+                        redirects the user to external sites, it's best to use an
+                        <a> tag that opens to a  new tab. Hence, this avoids using the
+                        Link component provided by Next.js. */}
+                    {element.category === "Social" ||
+                    element.category === "Contact" ? (
+                      <a
+                        className="text-gray-600 hover:text-gray-800"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={item.link}
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link href={item.link}>
+                        <a className="text-gray-600 hover:text-gray-800">
+                          {item.name}
+                        </a>
+                      </Link>
+                    )}
+                  </li>
+                ))}
               </nav>
-            </div> */}
-          {/* Contact */}
-
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">
-              Contact
-            </h2>
-            <nav className="list-none mb-10">
-              <li className="my-6 md:my-3">
-                <a
-                  className="text-gray-600 hover:text-gray-800"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={COMPANY.email}
-                >
-                  Email
-                </a>
-              </li>
-            </nav>
-          </div>
-          {/* Social Media */}
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">
-              Social
-            </h2>
-            <nav className="list-none mb-10">
-              <li className="my-6 md:my-3">
-                <a
-                  className="text-gray-600 hover:text-gray-800"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.instagram.com/valkyriepcs_/"
-                >
-                  Instagram
-                </a>
-              </li>
-            </nav>
-          </div>
+            </div>
+          ))}
         </div>
       </div>
       {/* Copyright and Legal Sections */}
