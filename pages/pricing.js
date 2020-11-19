@@ -5,7 +5,6 @@ import { COMPANY } from "data/company.json";
 import HeadTitle from "components/HeadTitle";
 import Section from "components/Section";
 import Container from "components/Container";
-import CTA from "components/CTA";
 
 // Will work on actual calculations once the overall website is complete. These
 // are just temporary values for now. WIll also include other parts such as OS,
@@ -174,29 +173,29 @@ export default function Pricing() {
         </Container>
       </Section>
 
+      {/* Email section */}
       <Section background="bg-gray-100">
         <Container>
           <div className="text-center">
-            <h1 className="sm:text-3xl text-3xl font-medium text-center title-font text-gray-900 mb-4">
+            <h1 className="title-font uppercase lg:text-5xl text-4xl mb-4 font-medium text-gray-900">
               Ready to Order?
             </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
               We'll respond ASAP! Promise!
             </p>
           </div>
-          <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+          <div className="flex mx-auto">
             <a
-              href="https://youtu.be/2CiVr6YAKz8?t=107"
               target="_blank"
               rel="noopener noreferrer"
+              href={COMPANY.email}
+              className="flex mx-auto mt-8 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
             >
               Email
             </a>
-          </button>
+          </div>
         </Container>
       </Section>
-
-      <CTA />
 
       <Footer />
     </>
