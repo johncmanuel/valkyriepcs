@@ -4,7 +4,6 @@ import Header from "components/HeaderData";
 import HeadTitle from "components/HeadTitle";
 import Nav from "components/Navbar";
 import Section from "components/Section";
-import { COMPANY } from "data/company.json";
 
 const faqContent = [
   {
@@ -12,12 +11,22 @@ const faqContent = [
     answer: "We are located in San Francisco, CA, United States.",
   },
   {
-    question: "Where do you get your parts?",
-    answer: "We get our parts from retail sellers, such as Newegg and Amazon.",
+    question: "What is the return policy?",
+    answer: "...",
   },
   {
-    question: "How does the shipping work?",
-    answer: "Loren yo mama",
+    question: "Do you offer loan financing or any other financial assistance?",
+    answer: "We do not...",
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer:
+      "We highly prefer Venmo to process transactions, but we also accept direct cash or check.",
+  },
+  {
+    question: "How long does a build usually take?",
+    answer:
+      "A build usually takes 2-3 days for us to put together and stress-test.",
   },
 ];
 
