@@ -24,9 +24,14 @@ const faqContent = [
       "We highly prefer Venmo to process transactions, but we also accept direct cash or check.",
   },
   {
+    question: "At what point in the build process do I make my payment?",
+    answer:
+      "After the customer has approved their personalized parts list, they must make an initial deposit of 20% of the total build price. Once the deposit is received the parts will be purchased and the build process will begin. The remaining 80% of the total payment will be made upon the delivery of the tower.",
+  },
+  {
     question: "How long does a build usually take?",
     answer:
-      "A build usually takes 2-3 days for us to put together and stress-test.",
+      "The build itself usually takes 2-3 days for us to put together and stress-test. However, accounting for part purchase and delivery, the entire process will take around 2-3 weeks.",
   },
 ];
 
