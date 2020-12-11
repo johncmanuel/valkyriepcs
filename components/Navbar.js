@@ -46,7 +46,6 @@ function DropdownDesktop() {
           <div className="rounded-lg shadow-2xl">
             <div className="rounded-lg shadow-xs overflow-hidden">
               <div className="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                {/* About link */}
                 <Link href="/about">
                   <div className="-m-3 p-3 flex items-center space-x-4 rounded-lg cursor-pointer hover:bg-gray-50 transition ease-in-out duration-150">
                     <Flag />
@@ -59,10 +58,7 @@ function DropdownDesktop() {
                   </div>
                 </Link>
                 {/* Blog link */}
-                <Link
-                  href="/blog"
-                  className="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
-                >
+                <Link href="/blog">
                   <div className="-m-3 p-3 flex items-start space-x-4 rounded-lg cursor-pointer hover:bg-gray-50 transition ease-in-out duration-150">
                     <BlogIcon />
                     <div className="space-y-1">
