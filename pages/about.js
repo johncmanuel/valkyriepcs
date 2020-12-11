@@ -46,7 +46,7 @@ export default function About() {
       <Section>
         <Container>
           <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="text-2xl font-medium mb-4 text-gray-900">
+            <h1 className="sm:text-4xl text-3xl font-medium mb-4 text-gray-900">
               OUR TEAM
             </h1>
             {/* <p className="lg:w-2/3 mx-auto leading-relaxed text-base">team desc</p> */}
