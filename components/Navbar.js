@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Flag from "components/icons/Flag";
 import BlogIcon from "./icons/BlogIcon";
+import { COMPANY } from "data/company.json";
 
 // Function for toggling the Dropdown menu on desktop
 function DropdownDesktop() {
@@ -45,7 +46,6 @@ function DropdownDesktop() {
           <div className="rounded-lg shadow-2xl">
             <div className="rounded-lg shadow-xs overflow-hidden">
               <div className="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                {/* About link */}
                 <Link href="/about">
                   <div className="-m-3 p-3 flex items-center space-x-4 rounded-lg cursor-pointer hover:bg-gray-50 transition ease-in-out duration-150">
                     <Flag />
@@ -58,10 +58,7 @@ function DropdownDesktop() {
                   </div>
                 </Link>
                 {/* Blog link */}
-                <Link
-                  href="/blog"
-                  className="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
-                >
+                <Link href="/blog">
                   <div className="-m-3 p-3 flex items-start space-x-4 rounded-lg cursor-pointer hover:bg-gray-50 transition ease-in-out duration-150">
                     <BlogIcon />
                     <div className="space-y-1">
@@ -325,7 +322,7 @@ export default function Nav() {
               {/* Home */}
               <Link href="/">
                 <a className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
-                  Valkyrie PCs
+                  {COMPANY.name}
                 </a>
               </Link>
             </div>
@@ -355,6 +352,9 @@ export default function Nav() {
               <div className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
                 <Link href="/pricing">Pricing</Link>
               </div>
+              <div className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+                <Link href="/faq">FAQ</Link>
+              </div>
               {/* Contact */}
               <a
                 target="_blank"
@@ -382,7 +382,7 @@ export default function Nav() {
               </div> */}
           </div>
         </div>
-        <DropdownMobile />
+        {/* <DropdownMobile /> */}
       </div>
     </>
   );
