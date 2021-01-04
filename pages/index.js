@@ -154,8 +154,8 @@ export default function Home() {
               Why Pick Us?
             </h1>
             <p className="text-xl font-serif leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-              At Valkyrie PCs, we ensure that our computers are carefully built
-              to meet your expectations.
+              At {COMPANY.name}, we ensure that our computers are carefully
+              built to meet your expectations.
             </p>
           </div>
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">

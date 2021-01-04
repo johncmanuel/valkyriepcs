@@ -1,61 +1,6 @@
 import Link from "next/link";
+import Links from "components/Links";
 import { COMPANY } from "data/company.json";
-
-const footerContent = [
-  {
-    category: "Company",
-    items: [
-      {
-        name: "About",
-        link: "/about",
-      },
-      {
-        name: "Pricing",
-        link: "/pricing",
-      },
-      {
-        name: "Careers",
-        link: "/careers",
-      },
-    ],
-  },
-  {
-    category: "Resources",
-    items: [
-      {
-        name: "Blog",
-        link: "/blog",
-      },
-      {
-        name: "FAQ",
-        link: "/faq",
-      },
-      // Will add later on in the future.
-      // {
-      //   name: "Customers",
-      //   link: "/customers",
-      // },
-    ],
-  },
-  {
-    category: "Contact",
-    items: [
-      {
-        name: "Email",
-        link: COMPANY.email,
-      },
-    ],
-  },
-  {
-    category: "Social",
-    items: [
-      {
-        name: "Instagram",
-        link: "https://www.instagram.com/valkyriepcs_/",
-      },
-    ],
-  },
-];
 
 export default function Footer() {
   return (
@@ -82,7 +27,7 @@ export default function Footer() {
         </div>
         {/* Links */}
         <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-          {footerContent.map((element, key) => (
+          {Links.map((element, key) => (
             <div className="lg:w-1/4 md:w-1/2 w-full px-4" key={key}>
               <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">
                 {element.category}
