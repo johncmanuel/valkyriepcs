@@ -12,7 +12,7 @@ const faqContent = [
   },
   {
     question: "What is the return policy?",
-    answer: "",
+    answer: "If you are unsatisfied with your custom PC build, you may return it within 3 weeks of its delivery. You will receive be refunded 100% of the purchase price. ",
   },
   {
     question: "Do you offer loan financing or any other financial assistance?",
