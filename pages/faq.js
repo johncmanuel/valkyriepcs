@@ -12,7 +12,7 @@ const faqContent = [
   },
   {
     question: "What is the return policy?",
-    answer: "...",
+    answer: "",
   },
   {
     question: "Do you offer loan financing or any other financial assistance?",
