@@ -40,7 +40,12 @@ export default function Footer() {
                         <a> tag that opens to a new tab. Hence, this avoids using the
                         Link component provided by Next.js, which only opens in the
                         same tab. */}
-                    {element.category === "Social" ||
+                    <Link href={item.link}>
+                        <a className="text-gray-600 hover:text-gray-800">
+                          {item.name}
+                        </a>
+                      </Link>
+                    {/* {element.category === "Social" ||
                     element.category === "Contact" ? (
                       <a
                         className="text-gray-600 hover:text-gray-800"
@@ -56,7 +61,7 @@ export default function Footer() {
                           {item.name}
                         </a>
                       </Link>
-                    )}
+                    )} */}
                   </li>
                 ))}
               </nav>
